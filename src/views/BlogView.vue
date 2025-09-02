@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import AppBody from '@/components/Bodies/AppBody.vue';
-  import NavigationBar from '@/components/navigation/NavigationBar.vue';
+import NavigationBar from '@/components/navigation/NavigationBar.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@
       <NavigationBar/>
     </template>
     <template #main-content> 
-          <h1>Empty Home</h1>
+          <h1>Empty Blog</h1>
     </template>
     <template>
       <p>Some footer</p>

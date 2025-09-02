@@ -1,15 +1,22 @@
+<script setup lang="ts">
+  import AppBody from '@/components/Bodies/AppBody.vue';
+import NavigationBar from '@/components/navigation/NavigationBar.vue';
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <AppBody>
+    <template #header role="navigation">
+      <NavigationBar/>
+    </template>
+    <template #main-content> 
+          <h1>Empty About</h1>
+    </template>
+    <template>
+      <p>Some footer</p>
+    </template>
+  </AppBody>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+<style scoped>
+
 </style>
