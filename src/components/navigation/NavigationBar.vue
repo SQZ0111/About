@@ -46,7 +46,7 @@
 }
 
 .nav-heading {
-
+    margin-left: 10px;
     color: #fcf3ff;
     grid-area: heading;
 
