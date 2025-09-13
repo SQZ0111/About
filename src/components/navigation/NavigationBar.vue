@@ -19,8 +19,8 @@
 
 <style scoped>
 .nav-bar {
-  background-color: #e4a5ff;
-  height: 20dvh;
+  background-color:#a000f0;
+  height: auto;
   width: 100vw;
   display: grid;
   grid-template-areas: "heading heading utils"
@@ -47,7 +47,7 @@
 
 .nav-heading {
 
-    color: #8706c3;
+    color: #fcf3ff;
     grid-area: heading;
 
 }

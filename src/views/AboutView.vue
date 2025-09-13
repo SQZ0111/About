@@ -1,6 +1,7 @@
 <script setup lang="ts">
-  import AppBody from '@/components/Bodies/AppBody.vue'
+import AppBody from '@/components/body/AppBody.vue';
 import NavigationBar from '@/components/navigation/NavigationBar.vue'
+import AppFooter from '@/components/footer/AppFooter.vue';
 import markdownit from 'markdown-it'
 import { onMounted,ref } from 'vue';
 import aboutUrl from '@/assets/about.md?url';
@@ -16,7 +17,7 @@ onMounted(async() => {
       const text = await res.text();
       const mdText = md.render(text);
       html.value = mdText;
-      console.log(html.value);
+     
     } catch(e) {
       console.log(`Error: ${e}`);
     }
@@ -29,23 +30,32 @@ onMounted(async() => {
     <template #header role="navigation">
       <NavigationBar/>
     </template>
-    <template #main-content> 
+    <template class="main" #main-content> 
           <div class="about" v-html="html"></div>
     </template>
-    <template>
-      <p>Some footer</p>
+    <template #footer-content>
+      <AppFooter/>
     </template>
   </AppBody>
 </template>
 
 <style scoped>
+
   .about {
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.5;
+    font-size: 14px;
+    gap: 10px;
 
   }
+
   .about > * {
-    justify-self: center;
-    display: flex;
-    justify-content: center;
-    width: 80%;
+
+    width: 50%;
   }
+
 </style>

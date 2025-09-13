@@ -19,11 +19,12 @@
 <style>
     .app-body {
        
-        height:100vh;  /*set later to auto */ 
+        height:auto;  /*set later to auto */ 
         width: 100%;  
         display: flex;
         flex-direction: column;
-        background-color: #f7e3ff;
+        background-color: #a000f0;
+        color:#fcf3ff;
         align-items: center;
     }
 

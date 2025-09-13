@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import AppBody from '@/components/Bodies/AppBody.vue';
+  import AppBody from '@/components/body/AppBody.vue';
   import NavigationBar from '@/components/navigation/NavigationBar.vue';
 </script>
 
